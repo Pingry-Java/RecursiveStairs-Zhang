@@ -4,8 +4,11 @@ public class RecursiveStairs
 {
 
  /**
-  *
-  *
+  * This program has three main methods, the main method and the two staircase methods.
+  * The main method sets up necessary variables from the user, and the two methods
+  * recursively print stairs.
+  * @author William Zhang
+  * @version 0.1
   */
 
   public static void main(String[] args)
@@ -18,18 +21,21 @@ public class RecursiveStairs
     int levels = keyboard.nextInt();
 
    
-    System.out.print("Ascending Stairs:");
+    System.out.print("\nAscending Stairs:");
 
     ascendingStairs(levels);
 
-    System.out.println("Descending Stairs:");
+    System.out.println("\nDescending Stairs:");
 
     descendingStairs(levels);
   }
 
       /**
-       *
-       *
+       * This method says that while the counter is greater than 0, continue to recurse.
+       * The algorithm will print nothing until it hits the "bottom" of the chain, 
+       * at which point it will begin to print stars, at first one because levels is small, 
+       * but as it goes back up the chain will get bigger.
+       * @param the number of levels the user gave
        */
 
   public static void ascendingStairs(int levels)
@@ -51,9 +57,12 @@ public class RecursiveStairs
 
  
       /**
-       *
+       * Functions the opposite of the first method, and instead prints the largest number of stars first,
+       * then goes up the chain and prints one less each time because of the minus one increment
+       * made to the levels variable.
+       * @param levels, the number of levels of stairs the user wants from input
        */
-  public static void descendingStairs(int levels) //have to use tail recursion 
+  public static void descendingStairs(int levels) 
 
   {
     
